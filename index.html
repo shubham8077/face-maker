@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="animaker.css">
+</head>
+
+<body>
+
+    <header>
+        ANIMAKER
+    </header>
+
+    <hr>
+
+    <h3 id="default"><button>Default</button></h3>
+
+    <div class="box">
+        <div class="box1">
+
+            <div class="face">
+                <button class="f1">FACE 1</button>
+                <button class="f2">FACE 2</button>
+                <button class="f3">FACE 3</button>
+                <button class="f4">FACE 4</button>
+            </div>
+            <br>
+            <div class="hair">
+                <button class="h1">HAIR 1</button>
+                <button class="h2">HAIR 2</button>
+                <button class="h3">HAIR 3</button>
+                <button class="h4">HAIR 4</button>
+            </div>
+            <br>
+            <div class="eye">
+                <button class="e1">EYE 1</button>
+                <button class="e2">EYE 2</button>
+                <button class="e3">EYE 3</button>
+                <button class="e4">EYE 4</button>
+            </div>
+            <br>
+            <div class="nose">
+                <button class="n1">NOSE 1</button>
+                <button class="n2">NOSE 2</button>
+                <button class="n3">NOSE 3</button>
+                <button class="n4">NOSE 4</button>
+            </div>
+            <br>
+            <div class="mouth">
+                <button class="m1">MOUTH 1</button>
+                <button class="m2">MOUTH 2</button>
+                <button class="m3">MOUTH 3</button>
+                <button class="m4">MOUTH 4</button>
+            </div>
+
+        </div>
+
+
+        <!--####################################################################################-->
+
+
+        <div class="box2">
+
+
+
+            <div class="faces">
+
+                <div class="ff1">
+                    <img src="face1.png" height="470px">
+                </div>
+
+                <div class="ff2">
+                    <img src="face2.png" height="470px">
+                </div>
+
+                <div class="ff3">
+                    <img src="face3.png" height="470px">
+                </div>
+
+                <div class="ff4">
+                    <img src="face4.png" height="470px">
+                </div>
+
+            </div>
+
+
+            <!--####################################################################################-->
+
+
+
+
+            <div class="hairs">
+
+                <div class="hh1">
+                    <img src="hair1.png" height="470px">
+                </div>
+
+                <div class="hh2">
+                    <img src="hair2.png" height="470px">
+                </div>
+
+                <div class="hh3">
+                    <img src="hair3.png" height="470px">
+                </div>
+
+                <div class="hh4">
+                    <img src="hair4.png" height="470px">
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="eyes">
+
+                <div class="ee1">
+                    <img src="eye1.png" height="500px">
+                </div>
+
+                <div class="ee2">
+                    <img src="eye2.png" height="500px">
+                </div>
+
+
+                <div class="ee3">
+                    <img src="eye3.png" height="500px">
+                </div>
+
+
+                <div class="ee4">
+                    <img src="eye4.png" height="500px">
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="noses">
+
+                <div class="nn1">
+                    <img src="nose1.png" height="470px">
+                </div>
+
+                <div class="nn2">
+                    <img src="nose2.png" height="470px">
+                </div>
+
+                <div class="nn3">
+                    <img src="nose3.png" height="470px">
+                </div>
+
+                <div class="nn4">
+                    <img src="nose4.png" height="470px">
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="mouths">
+
+                <div class="mm1">
+                    <img src="mouth1.png" height="470px">
+                </div>
+
+                <div class="mm2">
+                    <img src="mouth2.png" height="470px">
+                </div>
+
+                <div class="mm3">
+                    <img src="mouth3.png" height="470px">
+                </div>
+
+                <div class="mm4">
+                    <img src="mouth4.png" height="470px">
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!--####################################################################################-->
+        </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+        $(".ff1,.ff2,.ff3,.ff4,.hh1,.hh2,.hh3,.hh4,.ee1,.ee2,.ee3,.ee4,.nn1,.nn2,.nn3,.nn4,.mm1,.mm2,.mm3,.mm4").hide();
+
+
+        $("#default").click(function(){
+            $(".ff1,.ff2,.ff3,.ff4,.hh1,.hh2,.hh3,.hh4,.ee1,.ee2,.ee3,.ee4,.nn1,.nn2,.nn3,.nn4,.mm1,.mm2,.mm3,.mm4").hide();
+        });
+
+
+        $(".f1").click(function () {
+            $(".ff1").show();
+            $(".ff2,.ff3,.ff4").hide();
+        });
+
+        $(".f2").click(function () {
+            $(".ff2").show();
+            $(".ff1,.ff3,.ff4").hide();
+        });
+
+        $(".f3").click(function () {
+            $(".ff3").show();
+            $(".ff1,.ff2,.ff4").hide();
+        });
+
+        $(".f4").click(function () {
+            $(".ff4").show();
+            $(".ff1,.ff2,.ff3").hide();
+        });
+
+        //////////////////////////////////////////////////////////////////////
+
+
+        $(".h1").click(function () {
+            $(".hh1").show();
+            $(".hh2,.hh3,.hh4").hide();
+        });
+
+        $(".h2").click(function () {
+            $(".hh2").show();
+            $(".hh1,.hh3,.hh4").hide();
+        });
+
+        $(".h3").click(function () {
+            $(".hh3").show();
+            $(".hh1,.hh2,.hh4").hide();
+        });
+
+        $(".h4").click(function () {
+            $(".hh4").show();
+            $(".hh1,.hh2,.hh3").hide();
+        });
+
+
+        ///////////////////////////////////////////////////////////////////////
+
+
+
+        $(".e1").click(function () {
+            $(".ee1").show();
+            $(".ee2,.ee3,.ee4").hide();
+        });
+
+        $(".e2").click(function () {
+            $(".ee2").show();
+            $(".ee1,.ee3,.ee4").hide();
+        });
+
+        $(".e3").click(function () {
+            $(".ee3").show();
+            $(".ee1,.ee2,.ee4").hide();
+        });
+
+        $(".e4").click(function () {
+            $(".ee4").show();
+            $(".ee1,.ee2,.ee3").hide();
+        });
+
+        //////////////////////////////////////////////////////////////////////////
+
+
+        ///////////////////////////////////////////////////////////////////////
+
+        $(".n1").click(function () {
+            $(".nn1").show();
+            $(".nn2,.nn3,.nn4").hide();
+        });
+
+        $(".n2").click(function () {
+            $(".nn2").show();
+            $(".nn1,.nn3,.nn4").hide();
+        });
+
+        $(".n3").click(function () {
+            $(".nn3").show();
+            $(".nn1,.nn2,.nn4").hide();
+        });
+
+        $(".n4").click(function () {
+            $(".nn4").show();
+            $(".nn1,.nn2,.nn3").hide();
+        });
+
+
+
+
+        ///////////////////////////////////////////////////////////////////////
+
+        $(".m1").click(function () {
+            $(".mm1").show();
+            $(".mm2,.mm3,.mm4").hide();
+        });
+
+        $(".m2").click(function () {
+            $(".mm2").show();
+            $(".mm1,.mm3,.mm4").hide();
+        });
+
+        $(".m3").click(function () {
+            $(".mm3").show();
+            $(".mm1,.mm2,.mm4").hide();
+        });
+
+        $(".m4").click(function () {
+            $(".mm4").show();
+            $(".mm1,.mm2,.mm3").hide();
+        });
+
+
+    });
+
+</script>
+
+</html>
